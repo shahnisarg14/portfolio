@@ -1,0 +1,225 @@
+.container-fluid {
+  margin-left: 35px;
+}
+
+.intro {
+  color: white;
+}
+
+.intro .greeting {
+  padding-bottom: 35px;
+}
+
+.intro .name {
+  color: greenyellow;
+}
+
+.intro .contact {
+  padding-top: 40px;
+}
+
+.work {
+  padding-top: 100px;
+  height: 500px;
+}
+
+.skill {
+  padding-top: 100px;
+}
+
+.section {
+  padding-bottom: 30px;
+}
+
+.section-heading {
+  color: steelblue;
+}
+
+.job-title {
+  color: greenyellow;
+}
+/*body {*/
+/*  padding-top: 75px;*/
+/*}*/
+
+/*.page-margin{*/
+/*  padding-top: 75px;*/
+/*  padding-bottom: 75px;*/
+/*}*/
+
+#about {
+  padding-top: 75px;
+}
+
+#work {
+  padding-top: 75px;
+}
+
+#projects {
+  padding-top: 75px;
+}
+
+#contact {
+  padding-top: 75px;
+}
+
+.menu {display: block; /* Hide on Desktop */}
+
+@media (min-width: 600px) {
+  .menu {display: none; /* Show on Mobile */}
+}
+
+
+.vertical-menu {
+  width: 120px; /* Set a width if you like */
+  margin-left: 20px;
+  float: left;
+}
+
+.vertical-menu a.active {
+  background-color: #07242b; /* Add a green color to the "active/current" link */
+  font-weight: bolder;
+  color: greenyellow;
+  border-left: 3px solid greenyellow;
+
+}
+
+.menu-content {
+  float: right;
+  margin-right: 20px;
+  color: white;
+  text-align: left;
+  padding: 0px 12px;
+  width: 80%;
+}
+
+.menu-item {
+  font-size: 1.5em;
+  transition: 0.3s;
+  color: white;
+  display: block; /* Make the links appear below each other */
+  padding: 10px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border-left: 1px solid whitesmoke;
+}
+
+.menu-item:hover {
+  font-weight: bolder;
+  color: greenyellow;
+  border-left: 3px solid greenyellow;
+}
+
+li {
+  display: block;
+  margin-top: 10px;
+}
+
+li:before {
+  /*Using a Bootstrap glyphicon as the bullet point*/
+  content: "\e080";
+  font-family: 'Glyphicons Halflings', monospace;
+  font-size: 9px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  color: #CCCCCC;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 15px;
+}
+
+.topnav {
+  overflow: scroll;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  /*display: block;*/
+  margin-top: 10px;
+  /*-webkit-animation: slide-up .5s ease-out;*/
+  /*-moz-animation: slide-up .5s ease-out;*/
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #66d9ef;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 1;
+  display: block;
+  /*-webkit-animation: slide-down .5s ease-out;*/
+  /*-moz-animation: slide-down .5s ease-out;*/
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: #ae81ff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/*@-webkit-keyframes slide-down {*/
+/*  0% { opacity: 0; -webkit-transform: translateY(-100%); }*/
+/*  100% { opacity: 1; -webkit-transform: translateY(0); }*/
+/*}*/
+/*@-moz-keyframes slide-down {*/
+/*  0% { opacity: 0; -moz-transform: translateY(-100%); }*/
+/*  100% { opacity: 1; -moz-transform: translateY(0); }*/
+/*}*/
+
+.topnav-hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* ensure box is displayed block during the transition  */
+.topnav-transition.topnav-hidden {
+  display: block;
+}
+
+.topnav-transition {
+  transition: opacity 3s ease;
+}
+
+.sub-menu {
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+#cool:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.image {
+  border-radius: 2%;
+  float: right;
+  height: 280px;
+  width: 240px;
+}
+
+.navbar.hide-nav {
+  display: none; /* You can play on opacity for nice transitions*/
+}

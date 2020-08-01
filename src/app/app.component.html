@@ -1,20 +1,85 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container-fluid">
 
+  <div class="intro container-fluid">
+    <h1 class="greeting">Hello!</h1>
+    <h2>I am <span class="name">Nisarg Shah</span>, a software engineer </h2>
+    <h2>at Amazon Web Services.</h2>
+    <h4 class="contact">Contact me @ shahnisarg087@gmail.com</h4>
+  </div>
+
+  <section class="work container-fluid">
+    <h2 class="section" style="text-align: center;"><span class="section-heading">Experience</span></h2>
+    <div class="vertical-menu vertical-line">
+      <a id="defaultOpen" class="menu-item" href="#/" (click)="openWork($event, 'Amazon')">Amazon</a>
+      <a class="menu-item" href="#/" (click)="openWork($event, 'Ansys')">Ansys</a>
+      <a class="menu-item" href="#/" (click)="openWork($event, 'Bisag')">BISAG</a>
+    </div>
+    <div id="Amazon" class="menu-content">
+      <h3><span class="job-title">Software Development Engineer</span> @ AWS</h3>
+      <h5>August 2019 - Present</h5>
+      <ul>
+        <li>Consolidated BGSP</li>
+      </ul>
+    </div>
+
+    <div id="Ansys" class="menu-content">
+      <h4><span class="job-title">Intern</span> @ Ansys</h4>
+      <h6>August 2018 - December 2018</h6>
+      <ul>
+        <li>Designed test plans and performed planned interactive testing for the newly added features to AnsysEDT
+          software
+        </li>
+        <li>Optimized C++ code-base by implementing hard-disk file cache system and reduced the execution time by
+          48.64%
+        </li>
+        <li>Investigated a program crash while running automated tests, created an independent program to reproduce the
+          error
+          using only third-party APIs and reported the bug to the API provide
+        </li>
+      </ul>
+    </div>
+
+    <div id="Bisag" class="menu-content">
+      <h4><span class="job-title">Intern</span> @ Bhaskaracharya Institute of Space Applications and Geo-Informatics
+      </h4>
+      <h6>August 2015 - April 2016</h6>
+      <ul>
+        <li>Designed UML diagrams to visualize user interactions, processes and the structure of system</li>
+        <li>Conceptualized, designed and developed a personal finance management Android application “MyMoney” using
+          Android Studio and Android SDK that allowed users to keep track of expenditure and calculated tax liabilities
+        </li>
+        <li>Awarded in top 7 among 72 projects at project fair organized by Gandhinagar Institute of Technology</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skill container-fluid">
+    <h2 class="section" style="text-align: center;"><span class="section-heading">Skills</span></h2>
+  </section>
+
+  <section>
+    <div class="block container-fluid" id="projects">
+      <h2 style="text-align: center; font-size: 20px" class="k"><b>Cool things I've built</b></h2>
+      <hr>
+      <p class="vi"><img class="image" hspace="20"
+                         src="../assets/profilePic.JPG">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+        going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+        comes
+        from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+        written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The
+        first
+        line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="block container-fluid" id="contact">
+      <h2 style="text-align: center; font-size: 20px" class="k"><b>Say hello!</b></h2>
+      <hr>
+    </div>
+  </section>
+
+</div>
