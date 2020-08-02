@@ -20,10 +20,14 @@
 
 .work {
   padding-top: 100px;
-  height: 500px;
+  height: 400px;
 }
 
 .skill {
+  padding-top: 100px;
+}
+
+.project {
   padding-top: 100px;
 }
 
@@ -50,6 +54,21 @@
 
 .date {
   color: white;
+}
+
+.skill-table {
+  color: white;
+}
+
+th {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+td {
+  padding-right: 20px;
+  padding-left: 30px;
+  padding-bottom: 10px;
 }
 
 .menu {display: block; /* Hide on Desktop */}
