@@ -82,7 +82,7 @@ td {
 
 .menu {display: block; /* Hide on Desktop */}
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
   td {
     padding-right: 0;
     padding-left: 0;
@@ -92,7 +92,7 @@ td {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
   h3 {
     font-size: 12px;
   }
