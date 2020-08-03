@@ -183,13 +183,6 @@ ul {
   /*-moz-animation: slide-down .5s ease-out;*/
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  color: #ae81ff;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 /* Style the active link (or home/logo) */
 .active {
   background-color: #4CAF50;
@@ -229,7 +222,7 @@ ul {
 
 .github-logo {
   padding-right: 10px;
-  max-width: 8%;
+  max-width: 10%;
   min-width: 20px;
   height: auto;
 }
@@ -237,7 +230,7 @@ ul {
 .linkedin-logo {
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 10%;
-  min-width: 20px;
+  max-width: 15%;
+  min-width: 25px;
   height: auto;
 }
