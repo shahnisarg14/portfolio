@@ -1,5 +1,7 @@
 .container-fluid {
-  margin-left: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 75px;
 }
 
 .intro {
@@ -20,7 +22,6 @@
 
 .work {
   padding-top: 100px;
-  height: 400px;
 }
 
 .skill {
@@ -40,6 +41,10 @@
 }
 
 .job-title {
+  color: white;
+}
+
+.company {
   color: greenyellow;
 }
 
@@ -54,6 +59,8 @@
 
 .date {
   color: white;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 
 .skill-table {
@@ -61,8 +68,10 @@
 }
 
 th {
+  font-weight: unset;
   padding-right: 20px;
   padding-bottom: 10px;
+  color: greenyellow;
 }
 
 td {
@@ -73,10 +82,40 @@ td {
 
 .menu {display: block; /* Hide on Desktop */}
 
-@media (min-width: 600px) {
-  .menu {display: none; /* Show on Mobile */}
+@media only screen and (max-width: 360px) {
+  td {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .skill-table {
+    width: 100%;
+  }
 }
 
+@media only screen and (max-width: 360px) {
+  h3 {
+    font-size: 12px;
+  }
+  .work {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .skill {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container-fluid {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .section-heading {
+    font-size: 20px;
+  }
+}
 
 .vertical-menu {
   width: 120px; /* Set a width if you like */
@@ -192,10 +231,12 @@ ul {
 }
 
 .image {
+  margin-right: 0;
+  mergin-left: 0;
   border-radius: 2%;
   float: right;
-  height: 280px;
-  width: 240px;
+  height: auto;
+  width: 28%;
 }
 
 .navbar.hide-nav {
